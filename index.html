@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Hiper Real | Tudo para sua Saúde</title>
+    <meta name="description" content="Farmácia Hiper Real - Os melhores medicamentos e produtos de saúde em Monte Santo-BA. Entrega rápida e preços especiais.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/1000224880.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> (75) 9219-6765</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Rua Maria Suely Pinheiro, 58, Monte Santo-BA</span>
+                </div>
+                <div class="header-links">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#contato">Contato</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <img src="img/1000224880.png" alt="Farmácia Hiper Real">
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Busque por medicamentos, produtos de beleza..." id="searchInput">
+                    <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="user-menu">
+                        <i class="fas fa-user"></i>
+                        <span>Minha Conta</span>
+                    </div>
+                    <div class="cart" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                        <span>Carrinho</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Medicamentos <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#">Analgésicos</a>
+                            <a href="#">Anti-inflamatórios</a>
+                            <a href="#">Antibióticos</a>
+                            <a href="#">Vitaminas</a>
+                        </div>
+                    </li>
+                    <li><a href="#" class="nav-link">Beleza</a></li>
+                    <li><a href="#" class="nav-link">Mamãe e Bebê</a></li>
+                    <li><a href="#" class="nav-link">Suplementos</a></li>
+                    <li><a href="#" class="nav-link promocoes">Promoções</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <section class="hero-banner">
+        <div class="banner-slider">
+            <div class="banner-slide active">
+                <div class="banner-content">
+                    <div class="container">
+                        <div class="banner-text">
+                            <h1>Sua Saúde em Primeiro Lugar</h1>
+                            <p>Os melhores medicamentos e produtos de saúde com qualidade garantida e preços especiais</p>
+                            <div class="banner-buttons">
+                                <a href="#destaques" class="btn btn-primary">Ver Ofertas</a>
+                                <a href="https://wa.me/557592196765" class="btn btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-image">
+                            <img src="img/1000225828.jpg" alt="Neosaldina Muscular">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Entrega Rápida</h3>
+                    <p>Receba em casa com agilidade</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Produtos Originais</h3>
+                    <p>100% garantia de procedência</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Parcelamento</h3>
+                    <p>Até 12x sem juros</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Atendimento Especializado</h3>
+                    <p>Farmacêuticos qualificados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTAQUES DA SEMANA -->
+    <section class="destaques" id="destaques">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-fire"></i> Destaques da Semana</h2>
+                <p>Os produtos mais procurados com preços especiais</p>
+            </div>
+            
+            <div class="produtos-grid">
+                <!-- Produto 1 - Neosaldina -->
+                <div class="produto-card featured" data-product="neosaldina">
+                    <div class="produto-badge">Destaque</div>
+                    <div class="produto-image">
+                        <img src="img/1000225828.jpg" alt="Neosaldina Muscular">
+                        <div class="produto-overlay">
+                            <button class="btn-quick-view">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <span class="tarja tarja-vermelha">TARJA VERMELHA</span>
+                        <h3>Neosaldina Muscular 16 comprimidos</h3>
+                        <p class="produto-description">Alívio rápido para dores musculares e tensão</p>
+                        <div class="produto-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(127 avaliações)</span>
+                        </div>
+                        <div class="produto-price">
+                            <span class="price-current">R$ 24,90</span>
+                            <span class="installments">ou 3x de R$ 8,30</span>
+                        </div>
+                        <button class="btn-add-cart" data-name="Neosaldina Muscular" data-price="24.90">
+                            <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 2 - Benegrip -->
+                <div class="produto-card" data-product="benegrip">
+                    <div class="produto-badge new">Novidade</div>
+                    <div class="produto-image">
+                        <img src="img/1000225826.jpg" alt="Linha Benegrip">
+                        <div class="produto-overlay">
+                            <button class="btn-quick-view">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Benegrip Multi - Tosse e Imunidade</h3>
+                        <p class="produto-description">Confiança em dose dupla para tosse e imunidade</p>
+                        <div class="produto-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(89 avaliações)</span>
+                        </div>
+                        <div class="produto-price">
+                            <span class="price-current">R$ 18,90</span>
+                            <span class="installments">ou 2x de R$ 9,45</span>
+                        </div>
+                        <button class="btn-add-cart" data-name="Benegrip Multi" data-price="18.90">
+                            <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 3 - Dr. Peanut -->
+                <div class="produto-card" data-product="drpeanut">
+                    <div class="produto-badge healthy">Saudável</div>
+                    <div class="produto-image">
+                        <img src="img/1000225825.jpg" alt="Dr. Peanut Pistache">
+                        <div class="produto-overlay">
+                            <button class="btn-quick-view">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Dr. Peanut Pasta de Amendoim Pistache</h3>
+                        <p class="produto-description">Nutrição, sabor e qualidade em um só produto</p>
+                        <div class="produto-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(203 avaliações)</span>
+                        </div>
+                        <div class="produto-price">
+                            <span class="price-current">R$ 32,90</span>
+                            <span class="installments">Zero lactose • 600g</span>
+                        </div>
+                        <button class="btn-add-cart" data-name="Dr. Peanut Pistache" data-price="32.90">
+                            <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 4 - Adicional -->
+                <div class="produto-card">
+                    <div class="produto-badge sale">Oferta</div>
+                    <div class="produto-image">
+                        <img src="https://via.placeholder.com/300x300/f0f0f0/666?text=Produto" alt="Produto em Oferta">
+                        <div class="produto-overlay">
+                            <button class="btn-quick-view">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Vitamina C 1000mg</h3>
+                        <p class="produto-description">Fortalece o sistema imunológico</p>
+                        <div class="produto-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(156 avaliações)</span>
+                        </div>
+                        <div class="produto-price">
+                            <span class="price-old">R$ 45,90</span>
+                            <span class="price-current">R$ 29,90</span>
+                            <span class="installments">ou 3x de R$ 9,97</span>
+                        </div>
+                        <button class="btn-add-cart" data-name="Vitamina C 1000mg" data-price="29.90">
+                            <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compre por Categoria</h2>
+                <p>Encontre rapidamente o que você precisa</p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-pills"></i>
+                    <h3>Medicamentos</h3>
+                    <p>Analgésicos, antibióticos e mais</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Beleza</h3>
+                    <p>Cuidados com pele e cabelo</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-baby"></i>
+                    <h3>Mamãe e Bebê</h3>
+                    <p>Produtos para toda família</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Suplementos</h3>
+                    <p>Vitaminas e proteínas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Receba nossas ofertas</h2>
+                    <p>Cadastre-se e seja o primeiro a saber das promoções</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail" id="newsletterEmail">
+                    <button type="button" id="newsletterBtn">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="img/1000224880.png" alt="Farmácia Hiper Real">
+                    </div>
+                    <p>Sua farmácia de confiança em Monte Santo-BA. Cuidando da sua saúde com qualidade e preços justos.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/557592196765"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Atendimento</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (75) 9219-6765</li>
+                        <li><i class="fas fa-envelope"></i> contato@farmaciahiperreal.com.br</li>
+                        <li><i class="fas fa-clock"></i> Seg-Sex: 7h às 22h</li>
+                        <li><i class="fas fa-clock"></i> Sáb-Dom: 8h às 20h</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Localização</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Rua Maria Suely Pinheiro, 58</li>
+                        <li>Monte Santo - BA</li>
+                        <li>CEP: 48800-000</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Pagamentos</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-pix"></i>
+                        <i class="fas fa-barcode"></i>
+                    </div>
+                    <p>Parcelamos em até 12x sem juros</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Farmácia Hiper Real. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Trocas e Devoluções</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/557592196765" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Fale Conosco</span>
+    </a>
+
+    <!-- MODAL CARRINHO -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Seu Carrinho</h3>
+                <span class="close" id="closeCart">&times;</span>
+            </div>
+            <div class="modal-body" id="cartItems">
+                <p class="empty-cart">Seu carrinho está vazio</p>
+            </div>
+            <div class="modal-footer">
+                <div class="cart-total">
+                    <strong>Total: R$ <span id="cartTotal">0,00</span></strong>
+                </div>
+                <button class="btn btn-primary" id="checkoutBtn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
